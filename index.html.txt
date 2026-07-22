@@ -20,7 +20,7 @@
 
 <input type="password"
 id="pin"
-placeholder="Enter 4 Digit PIN">
+placeholder="Enter 5 Digit PIN">
 
 <br><br>
 
