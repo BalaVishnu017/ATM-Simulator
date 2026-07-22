@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ATM Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="atm">
+
+<h2>ATM Simulator</h2>
+
+<!-- Login -->
+
+<div id="loginPage">
+
+<h3>Login</h3>
+
+<input type="password"
+id="pin"
+placeholder="Enter 4 Digit PIN">
+
+<br><br>
+
+<button onclick="login()">Login</button>
+
+<p id="loginMsg"></p>
+
+</div>
+
+<!-- ATM Menu -->
+
+<div id="atmPage" style="display:none;">
+
+<h3>Welcome</h3>
+
+<h4>
+Balance :
+₹<span id="balance">5000</span>
+</h4>
+
+<hr>
+
+<input type="number"
+id="amount"
+placeholder="Enter Amount">
+
+<br><br>
+
+<button onclick="deposit()">Deposit</button>
+
+<button onclick="withdraw()">Withdraw</button>
+
+<button onclick="checkBalance()">Balance</button>
+
+<button onclick="miniStatement()">Mini Statement</button>
+
+<button onclick="logout()">Logout</button>
+
+<hr>
+
+<div id="output"></div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
